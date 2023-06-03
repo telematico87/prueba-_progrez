@@ -1,27 +1,26 @@
-# Creating a multilevel dropdown menu in React
+# Test FrontEnd progrezz
 
-## [Live project here](https://ibaslogic.github.io/react-multilevel-dropdown-menu/)
+Se ha definido una esctructura simple para el front- end
 
-Read the step-by-step guide here: https://blog.logrocket.com/creating-multilevel-dropdown-menu-react/
+## Vista en Local:
 
-## Demo here:
+![image](https://github.com/telematico87/prueba-_progrez/assets/13879086/7963fedc-8a4f-458d-ba30-f0c7c1263653)
 
-![React multilevel dropdown menu](./images/project_demo.gif)
 
-## Clone project
+## Instalación
 
-You can download or clone this project by running this command from your terminal:
-
-```
-git clone https://github.com/Ibaslogic/react-multilevel-dropdown-menu
-```
-
-Then:
+Clonar el proyecto:
 
 ```
-cd react-multilevel-dropdown-menu
+git clone https://github.com/telematico87/prueba-_progrez
+```
+
+Luego:
+
+```
+cd prueba-_progrez
 npm install
 npm start
 ```
 
-You should see the app in your browser address bar at [http://localhost:3000](http://localhost:3000)
+Seguidamente puede acceder a  [http://localhost:3000](http://localhost:3000)
