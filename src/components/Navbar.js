@@ -1,10 +1,28 @@
-import { menuItems } from '../menuItems';
+
 import MenuItems from './MenuItems';
+import { useState, useEffect, useRef } from 'react';
+import { ItemsService } from '../services/ItemsService';
+
+
 const Navbar = () => {
+
+  const [item, setItem] = useState(null);
+
+  useEffect(() => {
+
+    const itemservice = new ItemsService();
+ 
+    itemservice.getMenu().then(data=> {
+      setItem(data);
+     })
+
+  }, []);
+
+
   return (
     <nav>
       <ul className="menus">
-        {menuItems.map((menu, index) => {
+        {item!=null?item.map((menu, index) => {
           const depthLevel = 0;
           return (
             <MenuItems
@@ -13,7 +31,7 @@ const Navbar = () => {
               depthLevel={depthLevel}
             />
           );
-        })}
+        }):''}
       </ul>
     </nav>
   );

@@ -66,7 +66,7 @@ const MenuItems = ({ items, depthLevel }) => {
               window.innerWidth > 960 ? (
               <span>&raquo;</span>
             ) : (
-              <span className="arrow" />
+              ''
             )}
           </button>
           <Dropdown
@@ -87,7 +87,7 @@ const MenuItems = ({ items, depthLevel }) => {
             {depthLevel > 0 ? (
               <span>&raquo;</span>
             ) : (
-              <span className="arrow" />
+              ''
             )}
           </button>
           <Dropdown
