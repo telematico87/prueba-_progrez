@@ -10,16 +10,16 @@ Read the step-by-step guide here: https://blog.logrocket.com/creating-multilevel
 
 ## Clone project
 
-You can download or clone this project by running this command from your terminal:
+Clonar el proyecto:
 
 ```
-git clone https://github.com/Ibaslogic/react-multilevel-dropdown-menu
+git clone https://github.com/telematico87/prueba-_progrez
 ```
 
-Then:
+Luego:
 
 ```
-cd react-multilevel-dropdown-menu
+cd prueba-_progrez
 npm install
 npm start
 ```
