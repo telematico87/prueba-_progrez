@@ -20,24 +20,28 @@ export class ItemsService {
 
   
       let keys=Object.keys(data.lista[0]);
-     
+   
       /**Preparar */
       var new_menu=keys.map((item, i) => {
-        if(data.lista[0][item][0]!=null){
-
-          let keys_submenu= Object.keys(data.lista[0][item][0]);
+        var sub_menu=data.lista[0][item][0].submenu;
+      
+       if(sub_menu!=null){
+          let keys_submenu= Object.keys(sub_menu);
+ 
           var new_submenu=keys_submenu.map((itemsub, j) => { 
             let elementoSubMenu={
-                title:itemsub,
-                url:'/'
+                title:sub_menu[itemsub][0].nombre_item,
+                url:sub_menu[itemsub][0].url,
             }
-              return elementoSubMenu;
+            return elementoSubMenu;
           });
+          
 
         }
+      
         let elementoMenu={
-          title:item,
-          url:'/',
+          title:data.lista[0][item][0].nombre_item,
+          url:data.lista[0][item][0].url,
           submenu: new_submenu
         }
         

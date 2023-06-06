@@ -1,0 +1,34 @@
+{
+  "lista": [
+    {
+      "card_list1": [
+          {"nombre_item":"Lista de Tarjetas", "url":""}
+      ],
+      "pays_transfer": [
+        { 
+          "submenu":{
+            "between_cards": [  {"nombre_item":"Entre tarjetas", "url":""}],
+            "banks": [ {"nombre_item":"Cuenta bancaria", "url":""}],
+            "credit_card": [ {"nombre_item":"Tarjetas de crédito", "url":""}]
+          },
+          "nombre_item":"Transferencia y pagos",
+          "url":""
+        }
+      ],
+      "support": [
+        {
+          "submenu":{
+            "lock": [  {"nombre_item":"Bloqueo", "url":""}],
+            "change_pass": [   {"nombre_item":"Cambiar contraseña", "url":""}]
+          },
+          "nombre_item":"Atención al cliente",
+           "url":""
+        }
+      ],
+      "enterprises": [
+        {"nombre_item":"Empresas", "url":""}
+       ]
+    }
+  ]
+}
+
